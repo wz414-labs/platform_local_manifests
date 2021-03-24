@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="wz414"
+           fetch="https://github.com/windowz414/"
+           revision="kasumi-v1" />
+
+  <remote  name="911"
+           fetch="https://github.com/115ek/"
+           revision="lineage-18.1" />
+
+
+  <!-- KERNEL
+  #####################################################-->
+  <project name="LineageOS/android_kernel_cyanogen_msm8916" path="kernel/cyanogen/msm8916" remote="github" revision="lineage-17.1" />
+
+  <!-- DEVICE TREES
+  #####################################################-->
+  <project name="android_device_cyanogen_msm8916-common" path="device/cyanogen/msm8916-common" remote="911" />
+  <project name="android_device_wileyfox_crackling" path="device/wileyfox/crackling" remote="wz414" />
+  
+  <!-- VENDOR
+  #####################################################-->
+  <project name="proprietary_vendor_wileyfox" path="vendor/wileyfox" remote="911" />
+
+</manifest>
